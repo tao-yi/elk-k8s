@@ -2,3 +2,8 @@ resources:
   limits:
     cpu: "1000m"
     memory: "1536Mi"
+
+antiAffinity: "soft"
+
+replicas: 1
+minimumMasterNodes: 1

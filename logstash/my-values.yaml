@@ -13,3 +13,18 @@ logstashPipeline:
         document_type => "%{[@metadata][type]}"
       }
     }
+
+
+service:
+  annotations: {}
+  type: ClusterIP
+  loadBalancerIP: ""
+  ports:
+    - name: beats
+      port: 5044
+      protocol: TCP
+      targetPort: 5044
+    - name: http
+      port: 8080
+      protocol: TCP
+      targetPort: 8080
