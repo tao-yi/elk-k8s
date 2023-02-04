@@ -8,5 +8,11 @@ resources:
 
 antiAffinity: "soft"
 
-replicas: 1
-minimumMasterNodes: 1
+replicas: "1"
+minimumMasterNodes: "1"
+
+volumeClaimTemplate:
+  accessModes: ["ReadWriteOnce"]
+  resources:
+    requests:
+      storage: 5Gi
