@@ -1,10 +1,10 @@
 resources:
   requests:
-    cpu: "128m"
-    memory: "128mi"
+    cpu: "100m"
+    memory: "100mi"
   limits:
     cpu: "1000m"
-    memory: "1536Mi"
+    memory: "200Mi"
 
 antiAffinity: "soft"
 
